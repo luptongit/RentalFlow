@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <fields>
+        <fullName>Asset__c</fullName>
+        <externalId>false</externalId>
+        <label>Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Asset Availability</relationshipLabel>
+        <relationshipName>Asset_Availability</relationshipName>
+        <required>true</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DailyAddition__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Addition</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DailyDrawDown__c</fullName>
+        <externalId>false</externalId>
+        <label>DailyDrawDown</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Daily_Final__c</fullName>
+        <externalId>false</externalId>
+        <label>Daily Final</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>true</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Initial_Availability__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial Availability</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <indexes>
+        <fullName>ixAssetDate</fullName>
+        <fields>
+            <name>Asset__c</name>
+            <sortDirection>ASC</sortDirection>
+        </fields>
+        <fields>
+            <name>Date__c</name>
+            <sortDirection>ASC</sortDirection>
+        </fields>
+        <label>Asset Date</label>
+    </indexes>
+    <label>Asset Availability</label>
+    <pluralLabel>Asset Availability</pluralLabel>
+</CustomObject>
