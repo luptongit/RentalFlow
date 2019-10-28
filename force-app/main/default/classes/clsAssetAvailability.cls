@@ -41,8 +41,11 @@ public class clsAssetAvailability {
     
     
     public static double GetInitialAvailability(id assetId, date dateInQuestion){
-        
-        return 333;
+        double retVal = 0;
+
+        retVal = [SELECT Daily_Final__c FROM AssetAvailability__b  LIMIT 1];
+
+        return retVal;
     }
     
     public static double GetDailyDrawDown(id asset_id, date dateInQuestion){
